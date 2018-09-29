@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel = "stylesheet" href = "Home.css">
+	<title>Martin Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class = "container-fluid">
+
+	<div class = "row">
+		<div class = "col"><h1 id = "bigheader">Home</h1></div>
+	</div>
+
+	<div class="menu">
+		<div class = "row">
+			<div class = "col"><a class="menu1" href="Home.html">Home</a></div>
+			<div class = "col"><a class="menu1" href="Links.html">Links</a></div>
+			<div class = "col-sm"><a class="menu1" data-toggle="dropdown" href="#">Games</a>
+				 <ul class="dropdown-menu">
+					 <li class="dropdown-item"><a class = "menu1" href="Snake.html">Snake</a></li>
+					 <li class="dropdown-item"><a class = "menu1" href="LootLad.html">Loot Lad</a></li>
+				 </ul>
+			</div>
+			<div class = "col"><p class="menu1">Contact</p></div>
+		</div>
+	</div>
+
+	<div class = "row"
+		<div class = "col">
+			<p id = "introtext">
+			This is a test page for Martin to learn HTML CSS and more. <br>
+			Hopefully this page can be used to be a portfolio of sorts.
+			</p>
+		</div>
+	</div>
+
+	<div class = "spacer"></div>
+
+	<div class="row">
+		<div class="col"><p onclick="javascript:testClick();" id="Hello_World">Click Me!</p></div>
+	</div>
+
+	<script>
+	function testClick(){
+		document.getElementById("Hello_World").innerHTML = "Hello World! <br> This is a JavaScript test.";
+	}
+	</script>
+
+	<div class="row">
+		<div class = "col"><h4 style = "text-align:center;">List of Things</h4></div>
+	</div>
+
+	<div class = "spacer"></div>
+
+	<div class ="row">
+		<div class ="col">
+		<table class = "table">
+			<tbody>
+				<tr>
+					<th>Spoken</th>
+					<td>English<br>Chinese</td>
+				</tr>
+				<tr>
+					<th>Written</th>
+					<td>English</td>
+				</tr>
+				<tr>
+					<th>Programming</th>
+					<td>C++<br>C#<br>Java<br>HTML<br>CSS</td>
+				</tr>
+				<tr>
+					<th>IDE</th>
+					<td>Unity3D<br>Eclipse<br>Visual Studios</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
+
+	<div class = "spacer"></div>
+
+	<div class="row">
+		<img class="img-fluid mx-auto d-block" src="http://wiki.gcdn.co/images/e/e6/AnnoR97_Object_140.png" alt="U.S.S.R Object 140">
+	</div>
+
+</div>
+</body>
+</html>
+<!--End of Document-->

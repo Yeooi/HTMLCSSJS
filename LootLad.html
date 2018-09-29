@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link rel = "stylesheet" href = "LootLad.css">
+<script src="LootLad.js"></script>
+<title>Loot Lad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onkeydown="getMovement(event)">
+	<div class = "container-fluid">
+
+		<div class = "row">
+			<div class = "col"><h1 id = "bigheader">Loot Lad</h1></div>
+		</div>
+		<div class="menu">
+			<div class = "row">
+				<div class = "col-sm"><a class="menu1" href="Home.html">Home</a></div>
+				<div class = "col-sm"><a class="menu1" href="Links.html">Links</a></div>
+				<div class = "col-sm"><a class="menu1" data-toggle="dropdown" href="#">Games</a>
+					 <ul class="dropdown-menu">
+						 <li class="dropdown-item"><a class = "menu1" href="Snake.html">Snake</a></li>
+						 <li class="dropdown-item"><a class = "menu1" href="LootLad.html">Loot Lad</a></li>
+					 </ul>
+		 	 	</div>
+				<div class = "col-sm"><a class="menu1" href="#">Contact</a></div>
+			</div>
+		</div>
+
+		<div class ="spacer"></div>
+
+		<div class = "row">
+			<div class = "col"><canvas id = "myCanvas" height = "500" width = "500">Does Not Support</canvas></div>
+		</div>
+
+		<div class ="spacer"></div>
+
+		<div class = "row">
+			<div class = "col-sm"><p class="score" id="commonScore">Score</p></div>
+			<div class = "col-sm"><p class="score" id="uncommonScore">Score</p></div>
+			<div class = "col-sm"><p class="score" id="rareScore">Score</p></div>
+			<div class = "col-sm"><p class="score" id="epicScore">Score</p></div>
+			<div class = "col-sm"><p class="score" id="legScore">Score</p></div>
+		</div>
+
+		<div class = "spacer"></div>
+
+		<div class = "row">
+			<div class = "col"><p id="instructions">'WASD' to move. 'F' to Shoot.<br> Try to kill monsters and get as much loot as possible</p></div>
+		</div>
+
+		<div class = "spacer"></div>
+
+		<script>
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		Init();
+		RunGame(gamespeed);
+		</script>
+
+	</div>
+</body>
+</html>
